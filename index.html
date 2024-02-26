@@ -56,7 +56,7 @@
     <section id="hero">
         <!-- FLEX CONTAINER -->
         <div
-            class="container flex flex-col-reverse px-6 mx-auto my-24 space-y-reverse space-y-10 md:space-x-10 md:flex-row md:space-y-0">
+            class="container flex flex-col-reverse px-6 mx-auto mt-12 mb-24 space-y-reverse space-y-10 md:space-x-10 md:flex-row md:space-y-0 md:my-24">
             <!-- LEFT ITEM -->
             <div class="flex flex-col space-y-12 items-center md:w-1/2 md:items-start">
                 <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
@@ -279,9 +279,12 @@
             <div class="flex flex-col justify-between">
                 <form>
                     <div class="flex space-x-3 flex-wrap justify-center gap-y-6">
-                        <input type="text" class="flex-1 px-4 text-accent rounded-full focus:outline-none h-10" name="email" id="email"
-                            placeholder="Updated in your inbox" />
+                        <input type="email" class="flex-1 px-4 text-slate-950 rounded-full focus:outline-none h-10" name="email" id="email"
+                            placeholder="Updated in your inbox" required/>
+                        
+                        <!-- BUTTON -->
                         <button
+                            type="submit"
                             class="px-6 py-2 text-white rounded-full bg-accent hover:bg-accent-500 focus:outline-none">Go</button>
                     </div>
                 </form>
