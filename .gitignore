@@ -1,0 +1,6 @@
+# NODE
+/node_modules
+
+#TAILWIND
+input.css
+tailwind.config.js
