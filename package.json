@@ -99,7 +99,7 @@
     "build": "tailwindcss -i ./input.css -o ./assets/css/main.css",
     "watch": "tailwindcss -i ./input.css -o ./assets/css/main.css --watch"
   },
-  "author": "",
+  "author": "mgonline86",
   "license": "ISC",
-  "description": ""
+  "description": "Simple Responsive Landing Page using Tailwind CSS"
 }
