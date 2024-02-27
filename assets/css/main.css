@@ -588,6 +588,10 @@ video {
   right: 1.5rem;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -627,24 +631,20 @@ video {
   margin-top: -3.5rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
-}
-
 .mb-24 {
   margin-bottom: 6rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-12 {
   margin-top: 3rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .block {
@@ -671,6 +671,10 @@ video {
   height: 1.5rem;
 }
 
+.max-h-0 {
+  max-height: 0px;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -681,6 +685,10 @@ video {
 
 .w-24 {
   width: 6rem;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .max-w-14 {
@@ -701,6 +709,10 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .grid-cols-4 {
@@ -811,6 +823,10 @@ video {
 
 .self-baseline {
   align-self: baseline;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-2xl {
@@ -971,14 +987,18 @@ video {
   color: rgb(248 250 252 / var(--tw-text-opacity));
 }
 
+.text-slate-950 {
+  --tw-text-opacity: 1;
+  color: rgb(2 6 23 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-slate-950 {
-  --tw-text-opacity: 1;
-  color: rgb(2 6 23 / var(--tw-text-opacity));
+.opacity-0 {
+  opacity: 0;
 }
 
 .shadow-2xl {
@@ -1021,21 +1041,31 @@ video {
   transform: translateY(14px);
 }
 
-.open {
+#menu-btn-chk:checked + #menu-btn {
   transform: rotate(90deg);
   transform: translateY(0px);
 }
 
-.open .hamburger-top {
+#menu-btn-chk:checked + #menu-btn .hamburger-top {
   transform: rotate(45deg) translateY(6px) translate(6px);
 }
 
-.open .hamburger-middle {
+#menu-btn-chk:checked + #menu-btn .hamburger-middle {
   display: none;
 }
 
-.open .hamburger-bottom {
+#menu-btn-chk:checked + #menu-btn .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+#menu {
+  transition: max-height 0.15s ease-out;
+}
+
+#menu-btn-chk:checked ~ #menu {
+  max-height: 500px;
+  transition: max-height 0.25s ease-in;
+  opacity: 100%;
 }
 
 .hover\:bg-accent-500:hover {
@@ -1080,14 +1110,6 @@ video {
   .md\:my-24 {
     margin-top: 6rem;
     margin-bottom: 6rem;
-  }
-
-  .md\:mt-12 {
-    margin-top: 3rem;
-  }
-
-  .md\:mt-1 {
-    margin-top: 0.25rem;
   }
 
   .md\:block {

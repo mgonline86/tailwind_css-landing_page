@@ -27,29 +27,33 @@
             </div>
             <!-- BUTTON -->
             <a href="#"
-                class="hidden p-3 px-6 pt-2 rounded-full bg-accent text-slate-50 font-bold self-baseline hover:bg-accent-500 md:block">Sign Up
+                class="hidden p-3 px-6 pt-2 rounded-full bg-accent text-slate-50 font-bold self-baseline hover:bg-accent-500 md:block">Sign
+                Up
             </a>
 
-            <!-- HAMBURGER ICON -->
-            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-                <span class="hamburger-top"></span>
-                <span class="hamburger-middle"></span>
-                <span class="hamburger-bottom"></span>
-            </button>
+            <!-- MOBILE MENU -->
+            <div class="md:hidden">
+                <!-- HAMBURGER ICON -->
+                <input type="checkbox" id="menu-btn-chk" class="absolute w-6 h-6 cursor-pointer z-10 opacity-0" />
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
 
-        </div>
-
-        <!-- MOBILE MENU -->
-        <div class="md:hidden">
-            <div id="menu"
-                class="absolute hidden flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-slate-800 rounded-2xl sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                <a href="#" class="font-bold">Pricing</a>
-                <a href="#" class="font-bold">Product</a>
-                <a href="#" class="font-bold">About Us</a>
-                <a href="#" class="font-bold">Careers</a>
-                <a href="#" class="font-bold">Community</a>
+                <div id="menu"
+                    class="absolute max-h-0 overflow-hidden mt-10 bg-slate-800 rounded-2xl sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <div class="flex py-8 flex-col items-center self-end space-y-6 font-bold">
+                        <a href="#" class="font-bold">Pricing</a>
+                        <a href="#" class="font-bold">Product</a>
+                        <a href="#" class="font-bold">About Us</a>
+                        <a href="#" class="font-bold">Careers</a>
+                        <a href="#" class="font-bold">Community</a>
+                    </div>
+                </div>
             </div>
         </div>
+
     </nav>
 
     <!-- HERO SECTION -->
@@ -91,9 +95,15 @@
                 <h2 class="max-w-md text-3xl font-bold text-center md:text-4xl md:text-left">
                     Many New Features!
                 </h2>
-                <p class="max-w-sm text-justify text-slate-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iure dicta maxime iste animi cum, pariatur facere corporis incidunt architecto sapiente atque perferendis reprehenderit illo, voluptatibus, suscipit fuga quibusdam repellat?
-                Soluta iure, quas delectus animi odit excepturi expedita ea adipisci! Animi, in eveniet, consectetur architecto sapiente blanditiis ad, perferendis nisi at accusamus similique fuga distinctio nemo eaque possimus placeat ea.
-                Harum vitae dolorem ipsam voluptatem, atque dicta in, omnis reiciendis quaerat totam laudantium unde quos ab, corrupti explicabo voluptas! Libero ratione sequi dolores, cupiditate consequuntur molestiae quisquam soluta dolore maxime?</p>
+                <p class="max-w-sm text-justify text-slate-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio iure dicta maxime iste animi cum, pariatur facere corporis incidunt architecto sapiente atque
+                    perferendis reprehenderit illo, voluptatibus, suscipit fuga quibusdam repellat?
+                    Soluta iure, quas delectus animi odit excepturi expedita ea adipisci! Animi, in eveniet, consectetur
+                    architecto sapiente blanditiis ad, perferendis nisi at accusamus similique fuga distinctio nemo
+                    eaque possimus placeat ea.
+                    Harum vitae dolorem ipsam voluptatem, atque dicta in, omnis reiciendis quaerat totam laudantium unde
+                    quos ab, corrupti explicabo voluptas! Libero ratione sequi dolores, cupiditate consequuntur
+                    molestiae quisquam soluta dolore maxime?</p>
             </div>
             <!-- RIGHT ITEM -->
             <div class="flex flex-col space-y-8 md:w-1/2">
@@ -279,12 +289,11 @@
             <div class="flex flex-col justify-between">
                 <form>
                     <div class="flex space-x-3 flex-wrap justify-center gap-y-6">
-                        <input type="email" class="flex-1 px-4 text-slate-950 rounded-full focus:outline-none h-10" name="email" id="email"
-                            placeholder="Updated in your inbox" required/>
-                        
+                        <input type="email" class="flex-1 px-4 text-slate-950 rounded-full focus:outline-none h-10"
+                            name="email" id="email" placeholder="Updated in your inbox" required autocomplete="email" />
+
                         <!-- BUTTON -->
-                        <button
-                            type="submit"
+                        <button type="submit"
                             class="px-6 py-2 text-white rounded-full bg-accent hover:bg-accent-500 focus:outline-none">Go</button>
                     </div>
                 </form>
@@ -292,7 +301,6 @@
             </div>
         </div>
     </footer>
-    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
